@@ -8,6 +8,19 @@ const {
   PermissionsBitField
 } = require("discord.js");
 
+const express = require("express");
+
+/* ================= KEEP ALIVE ================= */
+const app = express();
+app.get("/", (req, res) => {
+  res.send("Bot is alive!");
+});
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log("🌐 Keep-alive server running");
+});
+/* ============================================== */
+
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
@@ -224,3 +237,4 @@ function startCountdown() {
 
 /* ===== LOGIN ===== */
 client.login(process.env.TOKEN);
+
