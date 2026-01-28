@@ -85,9 +85,9 @@ client.on("messageCreate", async (message) => {
       .addOptions([
         { label: "Shop Acc Liên Quân", value: "lq", emoji: "🎮" },
         { label: "Shop Acc Free Fire", value: "ff", emoji: "🔥" },
-        { label: "Dịch vụ Discord", value: "discord", emoji: "🧩" },
-        { label: "Thuê Bot", value: "bot", emoji: "🤖" },
-        { label: "Tạo Server Discord", value: "server", emoji: "🏗️" },
+        { label: "Tài khoản Premium", value: "discord", emoji: "🧩" },
+        { label: "Tạo bot theo nhu cầu", value: "bot", emoji: "🤖" },
+        { label: "Dịch vụ Discord", value: "server", emoji: "🏗️" },
         { label: "Nạp Quân Huy", value: "quanhuy", emoji: "💎" },
         { label: "Khác", value: "other", emoji: "📌" }
       ]);
@@ -171,37 +171,37 @@ client.on("interactionCreate", async (interaction) => {
     case "ff":
       reply =
         "🔥 **SHOP ACC FREE FIRE**\n" +
-        "👉 Mở <#1076823487852859432> để xem acc";
+        "👉 -Coming soon-";
       break;
 
     case "discord":
       reply =
-        "🧩 **DỊCH VỤ DISCORD**\n" +
-        "• Setup server\n• Bot theo yêu cầu\n• Role – permission";
+        "🧩 **TÀI KHOẢN PREMIUM**\n" +
+        "> Netflix riêng tư:\n• Netflix 1 tháng: 80k\n> Youtube Premium:\n• Youtube Premium 1 tháng: 30k\n> Spotify Premium Cá nhân:\n• Spotify Premium 1 tháng: 50k\n• Spotify Premium 6 tháng: 270k\n• Spotify Premium 12 tháng: 450k";
       break;
 
     case "bot":
       reply =
-        "🤖 **THUÊ BOT DISCORD**\n" +
-        "Bot theo yêu cầu – bảo trì đầy đủ";
+        "🤖 **TẠO BOT DISCORD**\n" +
+        "👉 -Coming soon-";
       break;
 
     case "server":
       reply =
-        "🏗️ **TẠO SERVER DISCORD**\n" +
-        "Setup từ A–Z";
+        "🏗️ **DỊCH VỤ DISCORD**\n" +
+        "> Nicho Trial => Đối với tài khoản tạo trên 1 tháng, chưa dùng nicho lần nào hoặc không dùng nicho trong 12 tháng:\n• Nicho Trial 3 tháng: 80k\n> Còn các dịch vụ Nicho Boost, Boost Server, Decor Discord vui lòng nhắn tin cho <@1076385318263062609> hoặc tạo ticket tại <#1076823487852859432> để biết thêm chi tiết";
       break;
 
     case "quanhuy":
       reply =
         "💎 **NẠP QUÂN HUY**\n" +
-        "Liên hệ admin để nạp";
+        "Liên hệ <@1076385318263062609> hoặc tạo ticket tại <#1076823487852859432> để nạp với giá ưu đãi";
       break;
 
     case "other":
       reply =
         "📌 **DỊCH VỤ KHÁC**\n" +
-        "Inbox admin để trao đổi";
+        "Ngoài ra nếu bạn có nhu cầu tìm kiếm dịch vụ hay account gì cũng có thể order tại shop";
       break;
   }
 
@@ -237,4 +237,5 @@ function startCountdown() {
 
 /* ===== LOGIN ===== */
 client.login(process.env.TOKEN);
+
 
