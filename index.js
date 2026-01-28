@@ -189,13 +189,13 @@ client.on("interactionCreate", async (interaction) => {
     case "server":
       reply =
         "🏗️ **DỊCH VỤ DISCORD**\n" +
-        "> Nicho Trial => Đối với tài khoản tạo trên 1 tháng, chưa dùng nicho lần nào hoặc không dùng nicho trong 12 tháng:\n• Nicho Trial 3 tháng: 80k\n> Còn các dịch vụ Nicho Boost, Boost Server, Decor Discord vui lòng nhắn tin cho {@1076385318263062609} hoặc tạo ticket tại <#1076823487852859432> để biết thêm chi tiết";
+        "> Nicho Trial => Đối với tài khoản tạo trên 1 tháng, chưa dùng nicho lần nào hoặc không dùng nicho trong 12 tháng:\n• Nicho Trial 3 tháng: 80k\n> Còn các dịch vụ Nicho Boost, Boost Server, Decor Discord vui lòng nhắn tin cho **Chủ Shop** hoặc tạo ticket tại <#1076823487852859432> để biết thêm chi tiết";
       break;
 
     case "quanhuy":
       reply =
         "💎 **NẠP QUÂN HUY**\n" +
-        "Liên hệ {@1076385318263062609} hoặc tạo ticket tại <#1076823487852859432> để nạp với giá ưu đãi";
+        "Liên hệ **Chủ Shop** hoặc tạo ticket tại <#1076823487852859432> để nạp với giá ưu đãi";
       break;
 
     case "other":
@@ -237,6 +237,7 @@ function startCountdown() {
 
 /* ===== LOGIN ===== */
 client.login(process.env.TOKEN);
+
 
 
 
